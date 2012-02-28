@@ -3,7 +3,7 @@
   <parent>
     <artifactId>onebusaway-siri-apis</artifactId>
     <groupId>org.onebusaway</groupId>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
   </parent>
   <artifactId>onebusaway-siri-api-v13</artifactId>
   <version>1.0.1-SNAPSHOT</version>
@@ -38,4 +38,21 @@
     </repository>
   </repositories>
 
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>com.mycila.maven-license-plugin</groupId>
+        <artifactId>maven-license-plugin</artifactId>
+        <configuration>
+          <excludes combine.children="append">
+            <exclude>src/main/java/eu/datex2/**</exclude>
+            <exclude>src/main/java/org/onebusaway/**</exclude>
+            <exclude>src/main/java/uk/org/ifopt/**</exclude>
+            <exclude>src/main/java/uk/org/siri/**</exclude>
+            <exclude>src/main/schemas/**</exclude>
+          </excludes>
+        </configuration>
+      </plugin>    
+    </plugins>
+  </build>
 </project>

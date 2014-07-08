@@ -16,19 +16,18 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * Custom structure capturing our extensions to the SIRI SX Consequence element.
- *       
+ * Custom structure capturing our extensions to the SIRI VM VehicleActivity element.
  * 
- * <p>Java class for OneBusAwayConsequenceStructure complex type.
+ * <p>Java class for OneBusAwayVehicleActivityStructure complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="OneBusAwayConsequenceStructure">
+ * &lt;complexType name="OneBusAwayVehicleActivityStructure">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="DiversionPath" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="Layover" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -38,39 +37,31 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "OneBusAwayConsequenceStructure", propOrder = {
-    "diversionPath"
+@XmlType(name = "OneBusAwayVehicleActivityStructure", propOrder = {
+    "layover"
 })
 @XmlSeeAlso({
-    OneBusAwayConsequence.class
+    OneBusAwayVehicleActivity.class
 })
-public class OneBusAwayConsequenceStructure {
+public class OneBusAwayVehicleActivityStructure {
 
-    @XmlElement(name = "DiversionPath")
-    protected String diversionPath;
+    @XmlElement(name = "Layover")
+    protected boolean layover;
 
     /**
-     * Gets the value of the diversionPath property.
+     * Gets the value of the layover property.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
      */
-    public String getDiversionPath() {
-        return diversionPath;
+    public boolean isLayover() {
+        return layover;
     }
 
     /**
-     * Sets the value of the diversionPath property.
+     * Sets the value of the layover property.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
      */
-    public void setDiversionPath(String value) {
-        this.diversionPath = value;
+    public void setLayover(boolean value) {
+        this.layover = value;
     }
 
 }

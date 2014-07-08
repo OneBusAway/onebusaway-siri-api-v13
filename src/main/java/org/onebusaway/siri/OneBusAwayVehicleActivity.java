@@ -22,7 +22,7 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType>
  *   &lt;complexContent>
- *     &lt;extension base="{http://onebusaway.org/siri}OneBusAwayConsequenceStructure">
+ *     &lt;extension base="{http://onebusaway.org/siri}OneBusAwayVehicleActivityStructure">
  *     &lt;/extension>
  *   &lt;/complexContent>
  * &lt;/complexType>
@@ -32,9 +32,9 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "")
-@XmlRootElement(name = "OneBusAwayConsequence")
-public class OneBusAwayConsequence
-    extends OneBusAwayConsequenceStructure
+@XmlRootElement(name = "OneBusAwayVehicleActivity")
+public class OneBusAwayVehicleActivity
+    extends OneBusAwayVehicleActivityStructure
 {
 
 

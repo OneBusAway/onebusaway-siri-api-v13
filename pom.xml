@@ -58,6 +58,26 @@
     </repository>
   </repositories>
 
+  <dependencies>
+    <!-- starting with Java 11 these libraries are no longer part of the JRE by default
+         therefore they have to be added as ordinary dependencies -->
+    <dependency>
+      <groupId>javax.xml.bind</groupId>
+      <artifactId>jaxb-api</artifactId>
+      <version>2.3.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.sun.xml.bind</groupId>
+      <artifactId>jaxb-core</artifactId>
+      <version>2.3.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.sun.xml.bind</groupId>
+      <artifactId>jaxb-impl</artifactId>
+      <version>2.3.0</version>
+    </dependency>
+  </dependencies>
+
   <build>
     <plugins>
       <plugin>

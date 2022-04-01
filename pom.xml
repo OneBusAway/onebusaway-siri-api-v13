@@ -90,6 +90,7 @@
             <exclude>src/main/java/uk/org/ifopt/**</exclude>
             <exclude>src/main/java/uk/org/siri/**</exclude>
             <exclude>src/main/schemas/**</exclude>
+            <exclude>.idea/**</exclude>
           </excludes>
         </configuration>
       </plugin>    
